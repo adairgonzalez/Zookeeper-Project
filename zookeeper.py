@@ -1,3 +1,4 @@
+# Each selection and its' content
 camel = r"""
 Switching on the camera in the camel habitat...
  ___.-''''-.
@@ -119,14 +120,14 @@ Switching on the camera in the rabbit habitat...
 (" ~----( ~   Y.  )
 It looks like we will soon have more rabbits!"""
 
-
+# list which contains different choices of animals
 animals = [camel, lion, deer, goose, bat, rabbit]
 
-# write your code here
+# while loop which allows user to watch different cameras in one session.
 while True:
-   user = input("Which habitat # do you need? ")
+   user = input("Which habitat # do you need? ") # Takes user's input
    if user != "Exit":
        print(animals[int(user)])
    else:
-        print("See you later!")
+        print("See you later!") # If terminated, it will print this.
         break;
